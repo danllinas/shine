@@ -2,6 +2,7 @@ Rails.application.routes.draw do
   root 'dashboard#index'
   devise_for                    :users
   resources                     :customers, only: [ :index ]
+  get "angular_test"         => "angular_test#index"
 
 
   # The priority is based upon order of creation: first created -> highest priority.
